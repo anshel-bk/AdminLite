@@ -6,3 +6,5 @@ selenium~=4.4.3
 django-taggit==3.0.0
 django-taggit-serializer==0.1.7
 lxml==4.9.1
+mysqlclient==2.1.1
+
