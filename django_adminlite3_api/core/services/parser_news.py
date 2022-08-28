@@ -65,4 +65,3 @@ def get_news_ozon():
         data = {'title': title, 'resource': 'Ozon', 'created_at': date}
         post = Post.objects.create(**data)
         post.tags.add(*tags)
-

@@ -16,5 +16,4 @@ class PostSerializer(TaggitSerializer, serializers.ModelSerializer):
 
     class Meta:
         model = Post
-        fields = ("resource", "created_at", "tags")
-
+        fields = ("title", "resource", "created_at", "tags")

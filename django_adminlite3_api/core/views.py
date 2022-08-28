@@ -1,4 +1,3 @@
-
 from rest_framework import viewsets, pagination, generics, filters
 from rest_framework import permissions
 from taggit.models import Tag
@@ -20,8 +19,8 @@ class TagDetailView(generics.ListAPIView):
     permission_classes = [permissions.AllowAny]
 
     def get_queryset(self):
-        tag_slug = self.kwargs['tag_slug'].lower()
-        tag = Tag.objects.get(slug=tag_slug)
+        name = self.kwargs['name']
+        tag = Tag.objects.get(name=name)
         return Post.objects.filter(tags=tag)
 
 
