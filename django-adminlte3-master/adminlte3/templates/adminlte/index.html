@@ -1,0 +1,8 @@
+{% extends 'adminlte/base.html' %}
+
+{% block content %}
+    {% for t in test %}
+        <strong> Тестовая информация {{ t}}</strong>
+        <br>
+    {% endfor %}
+{% endblock %}
